@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.8 on win32)" generated="20230817 15:39:27.786" rpa="false" schemaversion="4">
+<suite id="s1" name="Primeiro Teste" source="D:\Estudos\AluraRobotFramework\curso-robot\aula_1\primeiro_teste.robot">
+<test id="s1-t1" name="Abrir o navegador e acessar o site Organo" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=http://localhost:3000/</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230817 15:39:27.939" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
+<status status="PASS" starttime="20230817 15:39:27.939" endtime="20230817 15:39:29.482"/>
+</kw>
+<status status="PASS" starttime="20230817 15:39:27.938" endtime="20230817 15:39:29.482"/>
+</test>
+<test id="s1-t2" name="Preencher os campos do formulário" line="8">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:form-nome</arg>
+<arg>Akemi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230817 15:39:29.484" level="INFO">Typing text 'Akemi' into text field 'id:form-nome'.</msg>
+<status status="PASS" starttime="20230817 15:39:29.483" endtime="20230817 15:39:29.566"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:form-cargo</arg>
+<arg>Desenvolvedora</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230817 15:39:29.567" level="INFO">Typing text 'Desenvolvedora' into text field 'id:form-cargo'.</msg>
+<status status="PASS" starttime="20230817 15:39:29.566" endtime="20230817 15:39:29.634"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:form-imagem</arg>
+<arg>https://picsum.photos/200/300</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230817 15:39:29.635" level="INFO">Typing text 'https://picsum.photos/200/300' into text field 'id:form-imagem'.</msg>
+<status status="PASS" starttime="20230817 15:39:29.634" endtime="20230817 15:39:29.721"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:lista-suspensa</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230817 15:39:29.722" level="INFO">Clicking element 'class:lista-suspensa'.</msg>
+<status status="PASS" starttime="20230817 15:39:29.722" endtime="20230817 15:39:29.775"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//option[contains(.,'Programação')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230817 15:39:29.776" level="INFO">Clicking element '//option[contains(.,'Programação')]'.</msg>
+<status status="PASS" starttime="20230817 15:39:29.775" endtime="20230817 15:39:29.810"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:form-botao</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230817 15:39:29.811" level="INFO">Clicking element 'id:form-botao'.</msg>
+<status status="PASS" starttime="20230817 15:39:29.810" endtime="20230817 15:39:29.925"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>class:colaborador</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230817 15:39:29.942" level="INFO">Element 'class:colaborador' is displayed.</msg>
+<status status="PASS" starttime="20230817 15:39:29.925" endtime="20230817 15:39:29.942"/>
+</kw>
+<status status="PASS" starttime="20230817 15:39:29.483" endtime="20230817 15:39:29.942"/>
+</test>
+<status status="PASS" starttime="20230817 15:39:27.788" endtime="20230817 15:39:29.943"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Primeiro Teste">Primeiro Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
